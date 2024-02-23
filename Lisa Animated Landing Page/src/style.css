@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  background-color: #fbf5fb;
+  width: 100%;
+  height: calc(100% - 1px);
+  position: relative;
+  padding-top: 1px;
+}
+
+.nav {
+  /* background-color: red; */
+  width: 100%;
+  height: 10vh;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.nav h2 {
+  /* background-color: yellow; */
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.nav h1 {
+  /* background-color: yellow; */
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lemon", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.5vh;
+  padding-left: 40px;
+}
+
+.text {
+  font-size: 2.5vh;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 570px;
+  position: relative;
+}
+
+#lisa {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  height: 500px;
+  object-fit: cover;
+}
+
+.over {
+  position: absolute;
+  width: 95%;
+  height: 40%;
+  bottom: 20;
+}
+
+.overlay {
+  /* background-color: red; */
+  position: absolute;
+  width: 95%;
+  height: 20%;
+  bottom: 1;
+  display: flex;
+  justify-content: space-between;
+  color: #dac3da;
+}
+
+.center-text {
+  margin-left: 20px;
+  font-size: 12vh;
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.circle {
+  margin-right: 20px;
+  font-size: 5vh;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(168, 133, 133);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.overlay1 {
+  /* background-color: red; */
+  position: absolute;
+  width: 95%;
+  height: 10%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  color: #dac3da;
+  border-top: 2px solid black;
+  margin-left: 25px;
+}
+
+.center-bottom-text {
+  margin-left: 20px;
+  font-size: 3vh;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 40px;
+}
+
+.arrow{
+  margin-right: 20px;
+  font-size: 4vh;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 40px;
+}
+
+
+.scroll {
+  width: 100%;
+  height: 30vh;
+  /* background-color: yellow; */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+}
+
+.scroll::-webkit-scrollbar{
+  overflow-x: hidden;
+}
+
+@keyframes scroll {
+  from{
+    transform: translate(0);
+  }
+  to{
+    transform: translate(-100%);
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+  display: inline-block;
+  animation-name: scroll;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#img {
+  margin-top: 13px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin-left: 10px;
+  object-fit: cover;
+  background-position: top;
+}
+
+.alphabet {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  gap: 40px;
+}
+
+.abcd {
+  font-size: 2.5vh;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.abcd:hover {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.all-text {
+  font-size: 3.5vh;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+
+.part-3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 2vw;
+  box-sizing: border-box;
+}
+
+.part-3-1 {
+  background-color: yellow;
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  background-position: 0 0;
+}
+
+.part-3-2 {
+  background-color: red;
+  width: 50%;
+  height: 80%;
+  object-fit: cover;
+  background-position: top;
+}
+
+#img-prt-3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: top;
+}
+
+.part-3-3{
+  /* background-color: red; */
+  width: 100%;
+  height: 23%;
+  object-fit: cover;
+  background-position: top;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+#part-3-heading {
+  padding-right: 10px;
+  font-size: 12vh;
+  font-weight: 500;
+}
+
+.part-3-paragraph {
+  padding-right: 10px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.update {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  padding-top: 5vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.update>h1{
+  padding: 20px;
+}
+
+#boxes-for-update-section {
+  height: 20vh;
+  width: 80vw;
+  /* background-color: yellow; */
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid black;
+}
+
+
+.last-border-in-upadte-section{
+  border-bottom: 2px solid black;
+}
+
+.image-for-update {
+  width: 125px;
+  padding-top: 15px;
+  object-fit: cover;
+  background-position: top;
+  height: 125px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20%;
+  opacity: 0;
+  /* transition: all ease 0.7; */
+}
+
+#boxes-for-update-section:hover img {
+  opacity: 1;
+  left: 40%;
+  transition: all ease 0.10;
+}
+
+.text-for-update{
+  font-size: 10vh;
+  font-weight: 400;
+}
+
+.blank {
+  width: 100%;
+  height: 10%;
+}
+
+.marquee {
+  width: 100%;
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.marquee h1{
+  display: inline-block;
+  color: transparent;
+  font-size: 4vw;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 2px black;
+  font-weight: 900;
+  animation-name: marquee;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes marquee {
+  from{
+    transform: translate(0);
+  }
+  to{
+    transform: translate(-100%);
+  }
+}
+
+.footer{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
