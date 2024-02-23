@@ -390,3 +390,87 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
+
+
+
+
+
+
+
+@media (max-width:600px) {
+  
+.nav {
+  /* background-color: red; */
+  height: 8vh;
+  margin-top: 20px;
+}
+
+.nav h2 {
+display: none;
+}
+
+.nav h1 {
+  /* background-color: yellow; */
+  height: 100%;
+  width: 20%;
+  font-size: 3vh;
+  padding-left: 0px;
+}
+
+.video {
+  height: 65%;
+}
+
+
+.over {
+  /* background-color: red; */
+  padding-top: 200px;
+  height: 40%;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 50px;
+}
+
+.center-text {
+  margin-left: 10px;
+  font-size: 3vh;
+}
+
+.circle {
+  margin-right: 20px;
+  font-size: 2vh;
+  width: 50px;
+  height: 50px;
+}
+
+.overlay1 {
+  /* background-color: red; */
+  position: absolute;
+  width: 85%;
+  height: 10%;
+  bottom: 0;
+}
+
+.center-bottom-text {
+  margin-left: -15px;
+  font-size: 3vh;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 40px;
+}
+
+.arrow{
+  margin-right: 20px;
+  font-size: 4vh;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 40px;
+}
+
+
+
+}
